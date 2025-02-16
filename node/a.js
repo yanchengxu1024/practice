@@ -14,3 +14,23 @@ function getActivityStartTimeAndEndTimeThisIssue() {
   }
 }
 console.log(JSON.stringify(getActivityStartTimeAndEndTimeThisIssue()))
+
+const arr = `36.97
+17.17
+16.38
+19.34
+20.73
+11.1
+50.44
+45.19
+53.7
+34.37
+36.6
+12.41
+41.83
+34.68`.split('\n').map(item => parseInt(item, 10) * 100)
+
+console.log(arr)
+
+const result = arr.reduce((a, b) => a + b, 0)
+console.log(result)
